@@ -15,7 +15,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const port = 443;
+// const port = 443;
 
 app.post("/", async (req, res) => {
   const { message } = req.body;
@@ -38,8 +38,8 @@ app.post("/", async (req, res) => {
 //   });
 // });
 
-app.listen(port, () => {
-  console.log(
-    `Server running at http://https://chatgpt-angular-clon.vercel.app/:${port}`
-  );
-});
+// app.listen(port, () => {
+//   console.log(
+//     `Server running at http://https://chatgpt-angular-clon.vercel.app/:${port}`
+//   );
+// });
