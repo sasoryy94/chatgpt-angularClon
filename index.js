@@ -17,7 +17,7 @@ app.use(cors());
 
 // const port = 443;
 
-app.post("/", async (req, res) => {
+app.post("/api", async (req, res) => {
   const { message } = req.body;
 
   const response = await openai.createCompletion({
